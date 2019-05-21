@@ -4,7 +4,7 @@ package io.spectre.helloshop.controller;
 import io.spectre.helloshop.domain.Member;
 import io.spectre.helloshop.domain.Order;
 import io.spectre.helloshop.domain.item.Item;
-import io.spectre.helloshop.domain.item.OrderSearch;
+import io.spectre.helloshop.domain.OrderSearch;
 import io.spectre.helloshop.service.ItemService;
 import io.spectre.helloshop.service.MemberService;
 import io.spectre.helloshop.service.OrderService;

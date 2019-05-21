@@ -5,7 +5,7 @@ import io.spectre.helloshop.domain.Member;
 import io.spectre.helloshop.domain.Order;
 import io.spectre.helloshop.domain.OrderItem;
 import io.spectre.helloshop.domain.item.Item;
-import io.spectre.helloshop.domain.item.OrderSearch;
+import io.spectre.helloshop.domain.OrderSearch;
 import io.spectre.helloshop.repository.MemberRepository;
 import io.spectre.helloshop.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +52,6 @@ public class OrderService {
     }
 
     public List<Order> findOrders(OrderSearch orderSearch) {
-        return orderRepository.findAll(orderSearch);
+        return orderRepository.findAll(orderSearch.toSpecification());
     }
 }
